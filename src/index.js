@@ -417,7 +417,13 @@ export default class RNPickerSelect extends PureComponent {
                     editable={false}
                     {...textInputProps}
                 />
-                {this.renderIcon()}
+                {/* {this.renderIcon()} */}
+                <View
+                    testID="icon_container"
+                    style={[defaultStyles.iconContainer, style.iconContainer]}
+                >
+                    {Icon}
+                </View>
             </View>
         );
     }
@@ -528,7 +534,13 @@ export default class RNPickerSelect extends PureComponent {
                 >
                     {this.renderPickerItems()}
                 </Picker>
-                {this.renderIcon()}
+                {/* {this.renderIcon()} */}
+                <View
+                    testID="icon_container"
+                    style={[defaultStyles.iconContainer, style.iconContainer]}
+                >
+                    {Icon}
+                </View>
             </View>
         );
     }
